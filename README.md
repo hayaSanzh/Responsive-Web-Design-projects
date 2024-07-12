@@ -1,3 +1,2 @@
-# Responsive-Web-Design-projects
-First certification projects from freeCodeCamp.
-In this repository, I have my own sertification projects from freeCodeCamp's ResponsiveWebDesign course from summer 2024.
+# freeCodeCamp sertification projects
+In this current repository I keep my sertification projects from freeCodeCamp.org. Also here is my profile link https://www.freecodecamp.org/hayaSanzh.
