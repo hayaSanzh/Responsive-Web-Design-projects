@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>C++ Documentation</header>
+        <a href="#Introduction" class="nav-link">Introduction</a>
+        <a href="#History" class="nav-link">History</a>
+        <a href="#Language" class="nav-link">Language</a>
+        <a href="#Standard_Library" class="nav-link">Standard Library</a>
+        <a href="#Compatibility" class="nav-link">Compatibility</a>
+        <a href="#References" class="nav-link">References</a>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>
+                C++ (/ˈsiː plʌs plʌs/, pronounced "C plus plus" and sometimes abbreviated as CPP) is a high-level,
+                general-purpose programming language created by Danish computer scientist Bjarne Stroustrup.
+                First released in 1985 as an extension of the C programming language, it has since expanded significantly over time; as of 1997,
+                C++ has object-oriented, generic, and functional features, in addition to facilities for low-level memory manipulation for systems
+                like microcomputers or to make operating systems like Linux or Windows. It is usually implemented as a compiled language, and many
+                vendors provide C++ compilers, including the Free Software Foundation, LLVM, Microsoft, Intel, Embarcadero, Oracle, and IBM.
+            </p>
+            
+            <p>
+                C++ was designed with systems programming and embedded, resource-constrained software and large systems in mind, with performance,
+                efficiency, and flexibility of use as its design highlights.[15] C++ has also been found useful in many other contexts, with key
+                strengths being software infrastructure and resource-constrained applications,[15] including desktop applications, video games,
+                servers (e.g., e-commerce, web search, or databases), and performance-critical applications (e.g., telephone switches or space probes).
+            </p>
+        </section>
+        <section class="main-section" id="History">
+            <header>History</header>
+
+            <p>
+                In 1979, Bjarne Stroustrup, a Danish computer scientist, began work on "C with Classes", the predecessor to C++.
+                The motivation for creating a new language originated from Stroustrup's experience in programming for his PhD thesis.
+                Stroustrup found that Simula had features that were very helpful for large software development, but the language was
+                too slow for practical use, while BCPL was fast but too low-level to be suitable for large software development.
+                When Stroustrup started working in AT&T Bell Labs, he had the problem of analyzing the UNIX kernel with respect to distributed computing.
+                Remembering his PhD experience, Stroustrup set out to enhance the C language with Simula-like features. C was chosen because it was
+                general-purpose, fast, portable, and widely used. In addition to C and Simula's influences, other languages influenced this new language,
+                including ALGOL 68, Ada, CLU, and ML.
+            </p>
+
+            <p>
+                In 1989, C++ 2.0 was released, followed by the updated second edition of The C++ Programming Language in 1991.
+                New features in 2.0 included multiple inheritance, abstract classes, static member functions, const member functions,
+                and protected members. In 1990, The Annotated C++ Reference Manual was published. This work became the basis for the future standard.
+                Later feature additions included templates, exceptions, namespaces, new casts, and a Boolean type.
+            </p>
+        </section>
+        <section class="main-section" id="Language">
+            <header>Language</header>
+
+            <p>
+                The C++ language has two main components: a direct mapping of hardware features provided primarily by the C subset,
+                and zero-overhead abstractions based on those mappings. Stroustrup describes C++ as "a light-weight abstraction programming
+                language [designed] for building and using efficient and elegant abstractions"; and "offering both hardware access and
+                abstraction is the basis of C++. Doing it efficiently is what distinguishes it from other languages."
+            </p>
+
+            <p>
+                C++ inherits most of C's syntax. A hello world program that conforms to the C standard is also a valid C++ hello word program.
+                The following is Bjarne Stroustrup's version of the Hello world program that uses the C++ Standard Library stream facility
+                to write a message to standard output:
+            </p>
+        </section>
+        <section class="main-section" id="Standard_Library">
+            <header>Standard Library</header>
+
+            <p>
+                The C++ standard consists of two parts: the core language and the standard library.
+                C++ programmers expect the latter on every major implementation of C++; it includes
+                aggregate types (vectors, lists, maps, sets, queues, stacks, arrays, tuples), algorithms
+                (find, for_each, binary_search, random_shuffle, etc.), input/output facilities (iostream, for reading from and writing to the console and files),
+                filesystem library, localisation support, smart pointers for automatic memory management, regular expression support, multi-threading library,
+                atomics support (allowing a variable to be read or written to by at most one thread at a time without any external synchronisation),
+                time utilities (measurement, getting current time, etc.), a system for converting error reporting that does not use C++ exceptions
+                into C++ exceptions, a random number generator, and a slightly modified version of the C standard library (to make it comply with the C++ type system).
+            </p>
+
+            <p>
+                A large part of the C++ library is based on the Standard Template Library (STL).
+                Useful tools provided by the STL include containers as the collections of objects
+                (such as vectors and lists), iterators that provide array-like access to containers
+                and algorithms that perform operations such as searching and sorting.
+            </p>
+        </section>
+        <section class="main-section" id="Compatibility">
+            <header>Compatibility</header>
+
+            <p>
+                To give compiler vendors greater freedom, the <code>C++</code> standards committee decided not to dictate the implementation of name mangling,
+                exception handling, and other implementation-specific features. The downside of this decision is that object code produced by
+                different compilers is expected to be incompatible. There are, however, attempts to standardize compilers for particular machines
+                or operating systems. For example, the Itanium <code>C++</code> ABI is processor-independent (despite its name) and is implemented by GCC and Clang.
+            </p>
+
+            <p>
+                C++ is often considered to be a superset of C but this is not strictly true. Most C code can easily be made to compile correctly
+                in C++ but there are a few differences that cause some valid C code to be invalid or behave differently in C++. For example,
+                C allows implicit conversion from <code>void*</code> to other pointer types but C++ does not (for type safety reasons). Also, C++ defines
+                many new keywords, such as <code>new</code> and <code>class</code>, which may be used as identifiers (for example, variable names) in a C program.
+            </p>
+        </section>
+        <section class="main-section" id="References">
+            <header>References</header>
+            <ul>
+                <li> "Overview of modules in C++". Microsoft. 24 April 202</li>
+                <li>
+                    Stroustrup, Bjarne (16 December 2021). "C++20: Reaching for the Aims of
+                    C++ - Bjarne Stroustrup - CppCon 2021". CppCon. Archived from the original
+                    on 30 December 2021. Retrieved 30 December 2021.
+                </li>
+                <li>
+                    Stroustrup, Bjarne (12 June 2020). "Thriving in a crowded and changing world:
+                    C++ 2006–2020". Proceedings of the ACM on Programming Languages. 4 (HOPL).
+                    Association for Computing Machinery (ACM): 1–168. doi:10.1145/3386320. ISSN 2475-1421.
+                    S2CID 219603741.
+                </li>
+                <li>Chapel spec (Acknowledgements)" (PDF). Cray Inc. 1 October 2015. Archived (PDF) from the original on 24 June 2018. Retrieved 14 January 2016.</li>
+                <li> Fogus, Michael. "Rich Hickey Q&A". Code Quarterly. Archived from the original on 11 January 2017. Retrieved 11 January 2017.</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
