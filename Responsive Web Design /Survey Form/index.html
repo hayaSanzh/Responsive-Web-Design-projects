@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>SayahApp</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1 id="title">SayahApp - your traveling helper in Kazakhstan</h1>
+<p id="description">Thank you for helping us to improve our platform</p>
+<form id="survey-form">
+    <div class="first-container">
+        <label id="name-label" for="name">
+            <p class="naming">Name</p><input type="text" id="name" placeholder="Enter your name" required>
+        </label>
+        <label id="email-label" for="email">
+            <p class="naming">Email</p><input type="email" id="email" placeholder="Enter your email" required>
+        </label>
+        <label id="number-label" for="number">
+            <p class="naming">Age</p><input type="number" id="number" min="16" max="120" placeholder="Enter you age (in years)">
+        </label>
+
+        <label for="gender">
+            <p class="naming">What is your gender?</p>
+            <select id="dropdown" id="gender">
+                <option value="">Select one:</option>
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+                <option value="3">Prefer not to say</option>
+            </select>
+        </label>
+    </div>
+
+
+    <div class="second-container">
+        <legend>How often do you travel?</legend>
+        <div class="answers">
+            <label for="more-once-a-month"><input class="inline" id="more-once-a-month" type="radio" value="1" name="often-travels" checked>More than once a month</label>
+            <label for="once-a-month"><input id="once-a-month" type="radio" value="2" name="often-travels">Once a month</label>
+            <label for="few-times-a-year"><input id="few-times-a-year" type="radio" value="3" name="often-travels">A few times a year</label>
+            <label for="once-a-year"><input id="once-a-year" type="radio" value="4" name="often-travels">Once a year</label>
+            <label class="margin-for-last-elements" for="less-once-a-year"><input id="less-once-a-year" type="radio" value="5" name="often-travels">Less than once a year</label>
+        </div>
+        <legend>What is the primary purpose of your travel?</legend>
+        <div class="answers">
+            <label for="leisure"><input id="leisure" type="radio" value="1" name="purpose" checked> Leisure</label>
+            <label for="business"><input id="business" type="radio" value="2" name="purpose"> Business</label>
+            <label for="family-visits"><input id="family-visits" type="radio" value="3" name="purpose"> Family visits</label>
+            <label for="education"><input id="education" type="radio" value="4" name="purpose"> Education</label>
+            <label for="others"><input id="others" type="radio" value="5" name="purpose"> Others</label>
+        </div>
+        <hr>
+        <legend>Which travel guide apps have you used?</legend>
+        <div class="answers">
+            <label for="google-maps"><input id="google-maps" type="checkbox" value="1" name="guide-apps"> Google Maps</label>
+            <label for="trip-advisor"><input id="trip-advisor" type="checkbox" value="2" name="guide-apps"> TripAdvisor</label>
+            <label for="2gis"><input id="2gis" type="checkbox" value="3" name="guide-apps"> 2GIS</label>
+            <label for="airbnb"><input id="airbnb" type="checkbox" value="4" name="guide-apps"> Airbnb</label>
+            <label for="others"><input id="others" type="checkbox" value="5" name="guide-apps"> Others</label>
+        </div>
+
+    </div>
+
+
+    <div class="suggestions">
+        <label for="comments"> <p class="naming">Any suggestions or comments?</p>
+            <textarea name="comments" id="comments" placeholder="You need to improve..."></textarea>
+        </label>
+        <button type="submit" id="submit">Submit</button>
+    </div>
+</form>
+</body>
+</html>
