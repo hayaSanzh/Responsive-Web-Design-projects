@@ -1,0 +1,87 @@
+body {
+    width: 100%;
+    background-color: #f0ebf8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, #description {
+    margin: 1em auto;
+    text-align: center;
+}
+
+form {
+    width: 60vw;
+    margin: 0 auto;
+    max-width: 800px;
+    min-width: 500px;
+    padding-top: 1em;
+    background-color: #dfd1e3;
+    border-radius: 1%;
+    font-size: 1.125rem;
+}
+
+label, input {
+    display: block;
+}
+
+label, legend {
+    padding: 0 1em 0 1em;
+}
+input {
+    font-size: 18px;
+    margin: 10px 0 0 0;
+    width: 100%;
+    height: 30px;
+}
+
+select, input {
+    background-color: #f0ebf8;
+    border: none;
+    margin-bottom: 1em;
+}
+
+.margin-for-last-elements {
+    margin-bottom: 1em;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-bottom: -30px;
+}
+
+.second-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.answers {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+legend {
+    margin-top: 10px;
+}
+
+.suggestions {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#comments {
+    width: 90%;
+    height: 50px;
+    display: flex;
+    margin: auto;
+}
+
+#submit {
+    width: 200px;
+    height: 75px;
+    margin: 60px auto 50px auto;
+    border-radius: 10%;
+    border: 1px solid black;
+}
