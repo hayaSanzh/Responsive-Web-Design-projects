@@ -1,0 +1,101 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: gray;
+}
+
+.phone-borders {
+    background: white;
+    width: 330px;
+    height: 620px;
+    margin: 15vh auto;
+    border-radius: 30px;
+    overflow: auto;
+}
+
+.phone-camera {
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    border-radius: 100%;
+    margin: 10px auto;
+}
+
+.phone-microphone {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto 0 auto;
+}
+
+.microphone-circle {
+    height: 10px;
+    width: 10px;
+    background: black;
+    border-radius: 100%;
+    margin-right: 15px;
+}
+
+.microphone-line {
+    width: 50px;
+    height: 5px;
+    background: black;
+    border-radius: 25%;
+    margin-right: 24px;
+}
+
+.phone-screen {
+    background-color: black;
+    width: 95%;
+    height: 500px;
+    margin: 20px auto 0 auto;
+    overflow: auto;
+}
+
+#clear-btn {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin: 5px auto;
+}
+
+#user-input {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    height: 30px;
+    width: 200px;
+    font-size: 20px;
+}
+
+#check-btn {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+    margin: auto;
+    width: 100px;
+    height: 30px;
+}
+
+ul {
+    color: white;
+}
+
+li {
+    color: white;
+}
+
+.valid {
+    color: green;
+    margin-left: 10px;
+}
+
+.invalid {
+    color: red;
+    margin-left: 10px;
+}
